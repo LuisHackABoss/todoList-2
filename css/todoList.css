@@ -1,0 +1,118 @@
+@import url(./modal.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0.5rem 20vw;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* quiero que el input ocupe todo el ancho disponible */
+
+form label {
+  display: flex;
+}
+
+form input {
+  flex-grow: 1;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+
+/* form fieldset input {
+  
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+} */
+
+#error {
+  height: 1rem;
+  width: 100%;
+  color: red;
+}
+
+main {
+  height: calc(100vh - 12rem)
+}
+
+#buttons-container {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#buttons-container button {
+  width: 2rem;
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+  height: 3rem;
+  /* si desborda que no se vea */
+  object-fit: contain;
+}
+
+main li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.done {
+  color: lime;
+}
+
+footer {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
