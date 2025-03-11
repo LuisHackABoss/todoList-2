@@ -116,11 +116,11 @@ const render = () => {
 	// Cambiar el contenido de los botones
 	btnOrder.textContent = state.createOrder === 'new' ? '⬇️' : '⬆️';
 	if (state.doneFilter === 'done') {
-		btnFilter.innerHTML = '<img src="../img/done.png" alt="done"/>';
+		btnFilter.innerHTML = '<img src="./img/done.png" alt="done"/>';
 	} else if (state.doneFilter === 'undone') {
-		btnFilter.innerHTML = '<img src="../img/undone.png" alt="undone"/>';
+		btnFilter.innerHTML = '<img src="./img/undone.png" alt="undone"/>';
 	} else {
-		btnFilter.innerHTML = '<img src="../img/all.png" alt="all"/>';
+		btnFilter.innerHTML = '<img src="./img/all.png" alt="all"/>';
 	}
 };
 
